@@ -2,11 +2,11 @@ import numpy as np
 import random
 
 #Allow user input for board
-val = input ("How many rows/columns? ")
-board =  [[0]*val for i in range(val)]
-for row in range (val):
-    for col in range (val):
+board =  [[0]*9 for i in range(9)]
+for row in range (9):
+    for col in range (9):
         board[row][col] = input("What number is in row " + row + " and column " + col + "? If the space is empty, enter 0. ")
+
 
 def check_valid(board, value, index):
 
